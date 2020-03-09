@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_challenge/pages/home_page.dart';
+import 'package:flutter_challenge/pages/first_page.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
@@ -18,12 +18,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue),
       initialRoute: 'home',
       routes: {
-        'home': (_) => HomePage(),
+        'home': (_) => FirstPage(),
       },
     );
   }
