@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_challenge/pages/first_page.dart';
+import 'package:flutter_challenge/pages/second_page.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
@@ -19,9 +20,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
-      initialRoute: 'home',
+      initialRoute: 'second',
       routes: {
-        'home': (_) => FirstPage(),
+        'first': (_) => FirstPage(),
+        'second': (_) => SecondPage(),
       },
     );
   }
