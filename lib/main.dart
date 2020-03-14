@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_challenge/course_pages/first_class_page.dart';
 import 'package:flutter_challenge/pages/first_page.dart';
 import 'package:flutter_challenge/pages/second_page.dart';
 
@@ -20,9 +21,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.blue),
-      initialRoute: 'second',
+      initialRoute: 'first_class',
       routes: {
         'first': (_) => FirstPage(),
+        'first_class': (_) => FirstClassPage(),
         'second': (_) => SecondPage(),
       },
     );
